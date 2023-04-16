@@ -1,0 +1,25 @@
+<script>
+// person constructor
+function Person(name, dob) {
+    this.name = name;
+    this.birthday = new Date(dob); 
+    // this.age = age;
+    // console.log(this);
+    this.calculateage = function(){
+        const diff = Date.now() - this.birthday.getTime();
+        const ageDate = new Date(diff);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+}
+
+// console.log(this);   // output : window
+
+// const brad = new person('brad, 33');
+// const john = new Person("John", 40);
+
+//  console.log(john.age);
+
+const brad = new Person('Shahbaz', '5-2-2003');
+console.log(brad.calculateage());
+
+</script>

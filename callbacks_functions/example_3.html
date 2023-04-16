@@ -1,0 +1,42 @@
+<script>
+
+
+// function exampleFunc(arg1, arg2, callback){
+// var my_number = arg1 + arg2;
+// callback(my_number);
+
+// };
+
+
+// exampleFunc(5,15,function(n){
+
+// 	console.log(n)
+// });
+
+
+// map method 
+// const numbers = [3,4,6,1,8];
+
+// const square = function(number){
+//     return number*number;
+// }
+
+// const squareNumber = numbers.map((number, index)=>{
+//     return index;
+// });
+// console.log(squareNumber);
+
+const users = [
+    {firstName: "harshit", age: 23},
+    {firstName: "mohit", age: 21},
+    {firstName: "nitish", age: 22},
+    {firstName: "garima", age: 20},
+]
+
+const userNames = users.map((user)=>{
+    return user.firstName;
+});
+
+console.log(userNames);
+
+</script>

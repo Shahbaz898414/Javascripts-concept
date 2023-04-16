@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const name1 = "jeff";
+        // const name2 = new String("jeff");
+        // const name2 = [
+        //     {name:'askk'}
+        // ];
+    
+        // // name2.foo = 'bar';
+        // // console.log(name1);
+
+        // console.log(typeof name2);
+
+        // if( name2 === "jeff"){
+        //     console.log("Yes");
+        // }else {
+        //     console.log("No");
+        // }
+
+
+        //  Number
+        const num1 = 7;
+        const num2 = new Number(7); 
+        console.log(typeof num2);
+
+        //  Boolean 
+        const bool1 = true;
+        const bool2 = new Boolean(true);
+        console.log(bool2);
+
+        // Function
+        const getSum1 = function(x, y){
+            return x + y;
+        }
+
+        // console.log(getSum2(1, 1));
+        const getsum2 =  new Function('x','y', 'return 1 + 1');
+        console.log(getsum2());
+
+        // object
+        const anurag1 = {name:"anurag"};
+        const anurag2 = new Object({name: "anurag"});
+        console.log(typeof anurag2);
+        console.log(anurag2);
+
+        // Array
+        const arr1 = [1,2,3,4];
+        const arr2 = new Array(1,2,3,4);
+
+        // console.log(arr2);
+
+        // Regular Expressions
+        const re1 = /\w+/;
+        const re2 = new RegExp('\\w+');
+        console.log(re2);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#formBox {
+  height: 200px;
+  width: 500px;
+}
+
+#container {
+  position: relative;
+  top: 200px;
+}
+
+#output {
+  position: relative;
+  width: 360px;
+  background-color: #ddd;
+}

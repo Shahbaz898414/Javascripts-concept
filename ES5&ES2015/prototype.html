@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Object.prototype
+    // Person.prototype
+    
+    // Person constructor
+    function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.birthday = new Date(dob); 
+    // this.calculateAge = function(){
+    //     const diff = Date.now() - this.birthday.getTime();
+    //     const ageDate = new Date(diff);
+    //     return Math.abs(ageDate.getUTCFullYear() - 1970);
+    // }
+}
+
+//  Age calculater
+Person.prototype.calculateAge = function(){
+        const diff = Date.now() - this.birthday.getTime();
+        const ageDate = new Date(diff);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+// Get full Name
+Person.prototype.getFullName = function(){
+  return `${this.firstName}` + ` ` + `${this.lastName}`;
+}
+
+// Gets Married
+Person.prototype.getMarried = function(newlastName){
+  this.lastName = newlastName;
+}
+
+const Anurag = new Person('Anurag', 'patel', '2-2-2002');
+const Shoib = new Person('Shoib', 'sheikh', 'March 20 2002');
+const Marry = new Person('Marry', 'Doe', 'june 28 2003');
+
+console.log(Shoib);
+
+console.log(Anurag.calculateAge());
+
+console.log(Shoib.getFullName());
+
+console.log(Marry.getFullName());
+Marry.getMarried('sheikh');
+
+console.log(Marry.getFullName());
+
+console.log(Marry.hasOwnProperty('firstName'));
+console.log(Marry.hasOwnProperty('getFullName'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<script>
+                                 
+          
+//  function Animal(size, type, color) {
+//   this.size = size;
+//   this.type = type;
+//   this.color  = color;
+//  };
+             
+          
+//  Animal.prototype.getSize = function(){ alert( this.type)};
+           
+            
+//  var cat = new Animal("big","lion","yellow");
+       
+          
+//  console.log(cat.size);
+//  console.log(cat.type);
+//  console.log(cat.color);
+//  cat.getSize();
+     
+             
+function person(firstname, middlename, lastname, dob) {
+    this.firstname = firstname;
+    this.middlename = middlename;
+    this.lastname = lastname;
+    this.dob = new Date(dob);
+    this.getBirthYear = function() {
+        return this.dob.getFullYear();
+    }
+              
+    this.getFullName =  function() {
+        return `${this.firstname} ${this.lastname}`;
+    }
+}
+   
+//  Class
+// class person {
+//     constructor(firstname, middlename, lastname, dob) {
+//         this.firstname = firstname;
+//         this.middlename = middlename;
+//         this.lastname = lastname;
+//         this.dob = new Date(dob);
+//     }
+
+//      getBirthYear() {
+//         return this.dob.getFullYear();
+//     }
+
+//     getFullName () {
+//         return `${this.firstname} ${this.lastname}`;
+//     }
+// } 
+               
+           
+// Instantiate objects
+const Person1= new person ('shahbaz', 'salim', 'khan', '02-05-2000');
+const Person2= new person ('yasmeen', 'salim', 'khan', '02-05-1963');
+// console.log(Person1);
+// console.log(Person2.dob);
+// document.write(Person1);
+
+console.log(person1);
+console.log(Person2.getFullName());
+         
+             
+                 
+</script>             

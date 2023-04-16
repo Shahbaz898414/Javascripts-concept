@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic of number</title>
+</head>
+<body>
+    <div class="convert-1">
+      <h2>JavaScript Numbers</h2>
+
+      <p>JavaScript will try to convert strings to numbers when dividing:</p>
+    
+      <p id="demo"></p>
+        <script>
+          var x = "100";
+          var y = "10";
+          var z = x / y;   
+          document.getElementById("demo").innerHTML = z;
+        </script>   
+    
+    </div>
+<hr>
+    <div class="convert-2">
+      <h2>JavaScript Numbers</h2>
+
+      <p>If you add a numeric string and a number, the result will be a concatenated string:</p>
+
+      <p id="demo-2"></p>
+        <script>
+            var x = "10";
+            var y = 20;
+            document.getElementById("demo-2").innerHTML =
+            "The result is: " + x + y;
+        </script>
+    </div>
+    <hr>
+     <div class="convert-3">
+        <h2>JavaScript Numbers</h2>
+
+        <p>JavaScript will try to convert strings to numbers when multiplying:</p>
+        
+        <p id="demo-3"></p>
+        
+        <script>
+        var x = "100";
+        var y = "10";
+        var z = x * y;   
+        document.getElementById("demo-3").innerHTML = z;
+        </script>
+     </div>
+     <hr>
+     <div class="convert-4">
+        <h2>JavaScript Numbers</h2>
+
+        <p>JavaScript will try to convert strings to numbers when subtracting:</p>
+        
+        <p id="demo-4"></p>
+        
+        <script>
+        var x = "100";
+        var y = "10";
+        var z = x - y;   
+        document.getElementById("demo-4").innerHTML = z;
+        </script>
+        
+     </div>
+     <hr>
+     <div class="convert-5">
+        <h2>JavaScript Numbers</h2>
+
+        <p>JavaScript will NOT convert strings to numbers when adding:</p>
+        
+        <p id="demo-5"></p>
+        
+        <script>
+        var x = "100";
+        var y = "10";
+        var z = x + y;   
+        document.getElementById("demo-5").innerHTML = z;
+        </script>
+        
+     </div>
+<hr>
+     <div class="convert-6">
+        <h2>JavaScript Numbers</h2>
+
+        <p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+        
+        <p id="demo-6"></p>
+        
+        <script>
+        var myNumber = 2; 
+        var txt = "";
+        while (myNumber != Infinity) {
+           myNumber = myNumber * myNumber;
+           txt = txt + myNumber + "<br>";
+        }
+        document.getElementById("demo-6").innerHTML = txt;
+        </script>
+        
+     </div>
+     <hr>
+
+</body>
+</html>

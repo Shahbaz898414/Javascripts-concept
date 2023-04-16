@@ -1,0 +1,68 @@
+<script>
+
+
+
+
+// var skateboardCompanies = ['Flip', 'Birdhouse', 'Weirdo', 'Santa Cruz']; // What if this was a list of 500 companies?
+
+
+
+// var newEntry = "powell";
+
+// for (i = 0; i < skateboardCompanies.length; i++) {
+
+//     if (skateboardCompanies[i] === newEntry) {
+//         console.log(skateboardCompanies[i] + " already exists");
+
+//     } 
+
+//     else if(i === skateboardCompanies.length - 1){
+//         console.log(newEntry + " does not exists");
+//     }
+
+// };
+
+
+
+// else if(i === skateboardCompanies.length - 1){
+//         console.log(newEntry + " does not exists");
+//     }
+
+
+
+// for(  i=0;   i <skateboardCompanies.length;   i++  ) {
+//         console.log(   skateboardCompanies[i]   )    
+// }
+
+// LOOP THROUGH ARRAY
+const cars = ['Ford', 'Chevy', 'Honda', 'Toyota', 'tesla', 'Tata', 'samruti suzuki'];
+
+// for(let i = 0; i<cars.length;i++){
+//     console.log(cars[i]);
+// }a
+
+
+// FOREACH
+cars.forEach( function(car, index, array){
+    // console.log(car);
+    console.log(`${index} : ${car}`);
+    console.log(array);
+});
+
+
+// MAP
+const users  = [
+  {id: 1, name:'John'},
+  {id: 2, name: 'Sara'},
+  {id: 3, name: 'Karen'},
+  {id: 4, name: 'Steve'}
+];
+
+const ids = users.map(function(user){
+  return user.id;
+});
+
+console.log(ids);
+
+
+</script>

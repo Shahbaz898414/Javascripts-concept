@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      // some method 
+      // ek bhi num even hai to true return karo
+
+const numbers = [3,5,11,9];
+
+
+  // const ans = numbers.some((number)=>number%2===0);
+  // console.log(ans);
+
+  const userCart = [
+    {productId: 1, productName: "mobile", price: 12000},
+    {productId: 2, productName: "laptop", price: 22000},
+    {productId: 3, productName: "tv", price: 35000},
+    {productId: 3, productName: "macbook", price: 250000},
+   ]
+
+  const ans = userCart.some((cartItem)=>cartItem.price > 100000);
+  console.log(ans);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<script>
+  class Person {
+    constructor(firstName, lastName, dob) {
+      this.firstName  = firstName;
+      this.lastName  = lastName;
+      this.birthday = new Date(dob);
+    }
+ 
+    greeting() {
+      return `Hello there ${this.firstName} ${this.lastName}`;
+    }
+
+    calculateAge() {
+      const diff = Date.now() - this.birthday.getTime();
+      const ageDate = new Date(diff);
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+
+    getsMarried(newLastName) {
+      this.lastName = newLastName;
+    }
+
+    static addNumbers(x,y){
+      return x+y;
+    }
+  }
+
+  const shahbaz = new Person('shahbaz', 'khan','02-05-2002');
+  const Mary = new Person('mary', 'Williams','02-05-2002');
+
+  // console.log(shahbaz.calculateAge());
+// console.log(shahbaz.greeting());
+
+Mary.getsMarried('Khan');
+console.log(Mary);
+
+console.log(Person.addNumbers(98747843,746));
+
+</script>

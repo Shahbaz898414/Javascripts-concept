@@ -1,0 +1,26 @@
+<script>
+
+var item = null; 
+
+
+document.write(item) // outputs null
+
+document.write(typeof item); // This outputs        object. You've just discovered one of the many quirks of the Javascript language. Typeof when being used on null values outputs object.
+// This is not what should happen but like all programming languages, it has its faults.
+
+  /*  JavaScript Type Operators
+   Operator	Description
+   typeof	Returns the type of a variable
+    instanceof	Returns true if an object is an instance of an object type  */
+
+ /*  JavaScript Logical Operators
+  Operator	Description
+  &&	logical and
+  ||	logical or
+  !	logical not */
+
+  const sym = symbol();
+
+  console.log(typeof sym);
+
+</script>

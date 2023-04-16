@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // / fill method 
+// value , start , end -->ye order bhi hai
+
+
+// const myArray = new Array(10).fill(0);
+// console.log(myArray);
+
+const myArray = [1,2,3,4,5,6,7,8];
+myArray.fill(0,2,5);
+console.log(myArray);
+
+
+// splice method 
+// start , delete , insert 
+
+const myArray = ['item1', 'item2', 'item3'];
+
+// delete
+// const deletedItem = myArray.splice(1, 2);
+// console.log("delted item", deletedItem);
+// insert 
+// myArray.splice(1, 0,'inserted item');
+
+// insert and delete 
+const deletedItem = myArray.splice(1, 2, "inserted item1", "inserted item2")
+console.log("delted item", deletedItem);
+console.log(myArray);
+  </script>
+</body>
+</html>
