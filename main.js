@@ -259,12 +259,9 @@
 
 // const asd = ["shahbaz", "dfgvb", "dfgvcv", "sdcfvb", "erfdswe"];
 
-
-
 // const d1 = asd.map((num) => {
 //   return num.toLowerCase();
 // });
-
 
 // console.log(d1);
 
@@ -272,30 +269,21 @@
 
 // const df = ["shahbaz", "dfgvb", "dfgvcv", "sdcfvb", "erfdswe"];
 
-
-
 // const d2 = df.map((num) => {
 //   return num[0];
 // });
 
-
 // console.log(d2);
 
-
 // const vb = ["shahbaz", "dfgvb", "dfgvcv", "sdcfvb", "erfdswe"];
-
-
 
 // const d3 = vb.map((num) => {
 //   return num.toUpperCase();
 // });
 
-
 // console.log(d3);
 
 ///////////////////////     Find   /////////////////////////////////////////////////////////
-
-
 
 // const a = [9,1,,8, 2, 3, 4, 5, 6];
 
@@ -307,12 +295,9 @@
 //   return num%2!==0;
 // })
 
-
 // const sa=a.find((num)=>{
 //   return num===4;
 // })
-
-
 
 // console.log(ab);
 
@@ -322,34 +307,27 @@
 
 ///////////////  findIndex  //////////////////////////////////
 
+const a = [9, 1, , 8, 2, 3, 4, 5, 6];
 
-const a = [9,1,,8, 2, 3, 4, 5, 6];
+const fI = a.findIndex((num) => {
+  return num === 1;
+});
 
-const fI=a.findIndex((num)=>{
-  return num===1;
-})
+const f1 = a.findIndex((num) => {
+  return num === 2;
+});
 
+const f2 = a.findIndex((num) => {
+  return num === 0;
+});
 
-const f1=a.findIndex((num)=>{
-  return num===2;
-})
+const f3 = a.findIndex((num) => {
+  return num === 4;
+});
 
-
-
-const f2=a.findIndex((num)=>{
-  return num===0;
-})
-
-
-const f3=a.findIndex((num)=>{
-  return num===4;
-})
-
-
-const f4=a.findIndex((num)=>{
-  return num===6;
-})
-
+const f4 = a.findIndex((num) => {
+  return num === 6;
+});
 
 console.log(fI);
 console.log(f1);
@@ -360,11 +338,28 @@ console.log("\n");
 
 //////////////// includes  ////////////////////////////////
 
-
-const b = [9,1,,8, 2, 3, 4, 5, 6];
+const b = [9, 1, , 8, 2, 3, 4, 5, 6];
 
 console.log(b.includes(9));
 console.log(b.includes(0));
 console.log(b.includes(2));
 console.log(b.includes(1));
 console.log(b.includes(20));
+
+///////////////////////////////// slice  //////////////////////////////////////////////
+
+const sliceArray = [9, 1, , 8, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16];
+
+////////////////////////////// Ifelse  ///////////////////////////////////////////////
+
+const a1 = 10;
+const b1 = 13;
+const c = 12;
+
+if (a1 > b1 && a1 > c) {
+  console.log("a1 is");
+} else if (b1 > c && b1 > a1) {
+  console.log("b1 is");
+} else {
+  console.log("c is");
+}
