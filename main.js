@@ -134,93 +134,93 @@
 
 // console.log("even", even);
 
-// const f2 = [
-//   "a",
-//   "b",
-//   "c",
-//   "d",
-//   "e",
-//   "f",
-//   "g",
-//   "h",
-//   "i",
-//   "j",
-//   "k",
-//   "l",
-//   "m",
-//   "n",
-//   "o",
-//   "aa",
-//   "ab",
-//   "ac",
-//   "ad",
-//   "ae",
-//   "af",
-//   "ag",
-//   "ah",
-//   "ai",
-//   "aj",
-//   "ak",
-//   "al",
-//   "am",
-//   "an",
-//   "ao",
-//   "ap",
-//   "aaa",
-//   "aab",
-//   "aac",
-//   "aad",
-//   "aae",
-//   "aaf",
-//   "aag",
-//   "aah",
-//   "aai",
-//   "aaj",
-//   "aak",
-//   "aal",
-//   "aam",
-//   "aan",
-//   "aao",
-//   "aap",
-//   "aba",
-//   "abb",
-//   "abc",
-//   "abd",
-//   "abe",
-//   "abf",
-//   "abg",
-//   "abh",
-//   "abi",
-//   "abj",
-//   "abk",
-//   "abl",
-//   "abm",
-//   "abn",
-//   "abo",
-//   "abp",
-//   "aaaa",
-//   "aaab",
-//   "aaac",
-//   "aaad",
-//   "aaae",
-//   "aaaf",
-//   "aaag",
-//   "aaah",
-//   "aaai",
-//   "aaaj",
-//   "aaak",
-//   "aaal",
-//   "aaam",
-//   "aaan",
-//   "aaao",
-//   "aaap",
-//   "erdfg",
-//   "erdsf",
-//   "erfdf",
-//   "erdfg",
-//   "rfgdv",
-//   "rtfgf",
-// ];
+const f2 = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "aa",
+  "ab",
+  "ac",
+  "ad",
+  "ae",
+  "af",
+  "ag",
+  "ah",
+  "ai",
+  "aj",
+  "ak",
+  "al",
+  "am",
+  "an",
+  "ao",
+  "ap",
+  "aaa",
+  "aab",
+  "aac",
+  "aad",
+  "aae",
+  "aaf",
+  "aag",
+  "aah",
+  "aai",
+  "aaj",
+  "aak",
+  "aal",
+  "aam",
+  "aan",
+  "aao",
+  "aap",
+  "aba",
+  "abb",
+  "abc",
+  "abd",
+  "abe",
+  "abf",
+  "abg",
+  "abh",
+  "abi",
+  "abj",
+  "abk",
+  "abl",
+  "abm",
+  "abn",
+  "abo",
+  "abp",
+  "aaaa",
+  "aaab",
+  "aaac",
+  "aaad",
+  "aaae",
+  "aaaf",
+  "aaag",
+  "aaah",
+  "aaai",
+  "aaaj",
+  "aaak",
+  "aaal",
+  "aaam",
+  "aaan",
+  "aaao",
+  "aaap",
+  "erdfg",
+  "erdsf",
+  "erfdf",
+  "erdfg",
+  "rfgdv",
+  "rtfgf",
+];
 
 // console.log(f2);
 // console.log(f2.length);
@@ -369,14 +369,31 @@ console.log("\n");
 const loop = [9, 1,  8, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16];
 
 
-for(let i=0;i<(loop.length-3);i++){
-  console.log(i);
+// for(let i=0;i<(loop.length-3);i++){
+//   console.log(i);
+// }
+
+// console.log("\n");
+// let i=0
+// while(i<loop.length){
+//   console.log(i);
+//   i++
+// }
+
+
+// let j=0;
+// console.log("\n");
+// do {
+//   console.log(f2[j]);
+//   j++;
+// }
+// while(j<f2.length)
+
+
+for(let i in f2){
+  console.log(f2[i]);
 }
 
-console.log("\n");
-let i=0
-while(i<loop.length){
+for(let i of f2){
   console.log(i);
-  i++
 }
-
