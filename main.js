@@ -348,18 +348,28 @@ console.log(b.includes(20));
 
 ///////////////////////////////// slice  //////////////////////////////////////////////
 
-const sliceArray = [9, 1, , 8, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16];
+// const sliceArray = [9, 1, , 8, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16];
 
 ////////////////////////////// Ifelse  ///////////////////////////////////////////////
 
-const a1 = 10;
-const b1 = 13;
-const c = 12;
+// const a1 = 10;
+// const b1 = 13;
+// const c = 12;
 
-if (a1 > b1 && a1 > c) {
-  console.log("a1 is");
-} else if (b1 > c && b1 > a1) {
-  console.log("b1 is");
-} else {
-  console.log("c is");
+// if (a1 > b1 && a1 > c) {
+//   console.log("a1 is");
+// } else if (b1 > c && b1 > a1) {
+//   console.log("b1 is");
+// } else {
+//   console.log("c is");
+// }
+
+/////////////////// loop ////////////////////
+
+const loop = [9, 1, , 8, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16];
+
+
+for(let i=0;i<loop.length();i++){
+  console.log(i);
 }
+
