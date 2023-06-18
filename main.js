@@ -307,44 +307,44 @@
 
 ///////////////  findIndex  //////////////////////////////////
 
-const a = [9, 1, , 8, 2, 3, 4, 5, 6];
+// const a = [9, 1, , 8, 2, 3, 4, 5, 6];
 
-const fI = a.findIndex((num) => {
-  return num === 1;
-});
+// const fI = a.findIndex((num) => {
+//   return num === 1;
+// });
 
-const f1 = a.findIndex((num) => {
-  return num === 2;
-});
+// const f1 = a.findIndex((num) => {
+//   return num === 2;
+// });
 
-const f2 = a.findIndex((num) => {
-  return num === 0;
-});
+// const f2 = a.findIndex((num) => {
+//   return num === 0;
+// });
 
-const f3 = a.findIndex((num) => {
-  return num === 4;
-});
+// const f3 = a.findIndex((num) => {
+//   return num === 4;
+// });
 
-const f4 = a.findIndex((num) => {
-  return num === 6;
-});
+// const f4 = a.findIndex((num) => {
+//   return num === 6;
+// });
 
-console.log(fI);
-console.log(f1);
-console.log(f2);
-console.log(f3);
-console.log(f4);
+// console.log(fI);
+// console.log(f1);
+// console.log(f2);
+// console.log(f3);
+// console.log(f4);
 console.log("\n");
 
 //////////////// includes  ////////////////////////////////
 
-const b = [9, 1, , 8, 2, 3, 4, 5, 6];
+// const b = [9, 1, , 8, 2, 3, 4, 5, 6];
 
-console.log(b.includes(9));
-console.log(b.includes(0));
-console.log(b.includes(2));
-console.log(b.includes(1));
-console.log(b.includes(20));
+// console.log(b.includes(9));
+// console.log(b.includes(0));
+// console.log(b.includes(2));
+// console.log(b.includes(1));
+// console.log(b.includes(20));
 
 ///////////////////////////////// slice  //////////////////////////////////////////////
 
@@ -366,10 +366,17 @@ console.log(b.includes(20));
 
 /////////////////// loop ////////////////////
 
-const loop = [9, 1, , 8, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16];
+const loop = [9, 1,  8, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16];
 
 
-for(let i=0;i<loop.length();i++){
+for(let i=0;i<(loop.length-3);i++){
   console.log(i);
+}
+
+console.log("\n");
+let i=0
+while(i<loop.length){
+  console.log(i);
+  i++
 }
 
